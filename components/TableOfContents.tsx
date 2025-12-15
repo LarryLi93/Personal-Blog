@@ -23,6 +23,17 @@ document.head.appendChild(styleSheet);
 export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => {
   const [tocItems, setTocItems] = useState<TocItem[]>([]);
   const [activeId, setActiveId] = useState<string>('');
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  // 监听窗口大小变化
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // 解析Markdown内容中的标题并生成slug ID
   useEffect(() => {
@@ -118,12 +129,14 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
 
       {/* 目录导航 */}
       <div className={`
-        hidden lg:block fixed top-32 right-[calc((20%))] z-40 bg-neutral-900/95 backdrop-blur-md 
+        hidden lg:block fixed top-32 z-40 bg-neutral-900/95 backdrop-blur-md 
         border border-neutral-700 rounded-xl shadow-xl
         transition-all duration-300 ease-in-out
         min-w-[12rem] max-w-[28rem]
         lg:min-w-[12rem] lg:max-w-[28rem] lg:h-auto
-      `}>
+      `}
+      style={{right: `${screenWidth * 0.15}px`}}
+      >
         {/* 标题栏 */}
         <div className="flex items-center p-4 border-b border-neutral-700">
           <h3 className="font-semibold text-white text-sm uppercase tracking-wider">

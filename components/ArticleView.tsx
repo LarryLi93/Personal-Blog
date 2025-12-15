@@ -14,6 +14,8 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
   const [headingIdMap, setHeadingIdMap] = React.useState<Record<string, string>>({});
   // 控制返回顶部按钮的可见性
   const [showScrollTop, setShowScrollTop] = React.useState(false);
+  // 屏幕宽度状态，用于动态计算位置
+  const [screenWidth, setScreenWidth] = React.useState<number>(window.innerWidth);
 
   // 监听滚动事件，控制返回顶部按钮的显示/隐藏
   React.useEffect(() => {
@@ -23,6 +25,16 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // 监听窗口大小变化，更新屏幕宽度
+  React.useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   // 返回顶部函数
@@ -190,7 +202,8 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-[calc((31.5%))] z-50 bg-white text-black p-3 rounded-full shadow-lg hover:bg-neutral-200 transition-all duration-300 animate-fade-in"
+          className="fixed bottom-8 z-50 bg-white text-black p-3 rounded-full shadow-lg hover:bg-neutral-200 transition-all duration-300 animate-fade-in"
+          style={{right: `${screenWidth * 0.28}px`}}
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />

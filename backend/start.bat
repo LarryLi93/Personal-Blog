@@ -8,7 +8,7 @@ if not exist "venv" (
 )
 
 REM 激活虚拟环境
-call venv\Scripts\activate.bat
+venv\Scripts\Activate.ps1
 
 REM 安装依赖
 echo 安装依赖...
