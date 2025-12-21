@@ -84,7 +84,7 @@ So, when you try to brute-force it with "willpower" alone, you are essentially e
 **这是一场不对称的战争。靠蛮力，胜算极低。**
 
 Unless, you learn to **"Rewrite the Code."**  
-除非，你学会"**改写代码**"**。
+除非，你学会**改写代码**。
 
 ---
 
@@ -141,7 +141,7 @@ Programmers don't sit in front of a computer trying to fix bugs with their mind.
 
 In psychology, this tool is called **"Implementation Intentions."**  
 But I prefer to call it: **The Conditional Statement of the Brain.**  
-在心理学界，这个工具被称为"**执行意图**" (Implementation Intentions)**。  
+在心理学界，这个工具被称为**执行意图 (Implementation Intentions)**。  
 但我更愿意称之为：大脑的条件语句 (The Conditional Statement)。
 
 The underlying logic of computers is: If This, Then That.  

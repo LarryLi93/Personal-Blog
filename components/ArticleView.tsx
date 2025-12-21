@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { Article } from '../types';
 import { ArrowLeft, ArrowUp } from 'lucide-react';
 import { TableOfContents } from './TableOfContents';
+import remarkBreaks from 'remark-breaks'; // 引入插件
 
 interface ArticleViewProps {
   article: Article;
@@ -70,7 +71,8 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
           const hashCount = (trimmedLine.match(/^#+/)?.[0]?.length) || 0;
           
           if (hashCount === 1 || hashCount === 2) {
-            const text = trimmedLine.substring(hashCount).trim();
+            // 与TableOfContents组件保持一致的处理方式
+            const text = trimmedLine.substring(hashCount).trim().replace(/\*\*/g, '');
             
             // 生成与TableOfContents组件一致的ID
             const baseId = text
@@ -161,16 +163,45 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
             prose-table:border-neutral-700 prose-th:border-neutral-700 prose-td:border-neutral-700
             space-y-6">
           <ReactMarkdown
+            remarkPlugins={[remarkBreaks]} // 使用插件
             components={{
               h1: ({node, children, ...props}) => {
+                // 提取纯文本内容用于ID查找
+                const getTextContent = (children: React.ReactNode): string => {
+                  if (typeof children === 'string') return children;
+                  if (Array.isArray(children)) return children.map(getTextContent).join('');
+                  if (typeof children === 'object' && children !== null) {
+                    // @ts-ignore
+                    if (children.props && children.props.children) {
+                      // @ts-ignore
+                      return getTextContent(children.props.children);
+                    }
+                  }
+                  return '';
+                };
+                
                 // 使用预生成的唯一ID
-                const text = children?.toString() || '';
+                const text = getTextContent(children);
                 const id = headingIdMap[text] || '';
                 return <h1 id={id} {...props} className="!text-3xl !font-bold !text-white !mt-0 !mb-10 !leading-tight !tracking-tight">{children}</h1>;
               },
               h2: ({node, children, ...props}) => {
+                // 提取纯文本内容用于ID查找
+                const getTextContent = (children: React.ReactNode): string => {
+                  if (typeof children === 'string') return children;
+                  if (Array.isArray(children)) return children.map(getTextContent).join('');
+                  if (typeof children === 'object' && children !== null) {
+                    // @ts-ignore
+                    if (children.props && children.props.children) {
+                      // @ts-ignore
+                      return getTextContent(children.props.children);
+                    }
+                  }
+                  return '';
+                };
+                
                 // 使用预生成的唯一ID
-                const text = children?.toString() || '';
+                const text = getTextContent(children);
                 const id = headingIdMap[text] || '';
                 return <h2 id={id} {...props} className="!text-2xl !font-bold !text-white !mt-10 !mb-8 !leading-tight !tracking-tight">{children}</h2>;
               },
@@ -203,7 +234,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
         <button
           onClick={scrollToTop}
           className="fixed bottom-8 z-50 bg-white text-black p-3 rounded-full shadow-lg hover:bg-neutral-200 transition-all duration-300 animate-fade-in"
-          style={{right: `${screenWidth * 0.28}px`}}
+          style={{right: `20px`}}
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />

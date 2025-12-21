@@ -50,7 +50,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
           const hashCount = (trimmedLine.match(/^#+/)?.[0]?.length) || 0;
           
           if (hashCount === 1 || hashCount === 2) {
-            const text = trimmedLine.substring(hashCount).trim();
+            const text = trimmedLine.substring(hashCount).trim().replace(/\*\*/g, '');
             
             // 生成slug格式的ID，保留中文字符
             const baseId = text
@@ -135,7 +135,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
         min-w-[12rem] max-w-[28rem]
         lg:min-w-[12rem] lg:max-w-[28rem] lg:h-auto
       `}
-      style={{right: `${screenWidth * 0.15}px`}}
+      style={{right: `20px`}}
       >
         {/* 标题栏 */}
         <div className="flex items-center p-4 border-b border-neutral-700">
