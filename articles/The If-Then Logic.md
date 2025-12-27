@@ -1,5 +1,5 @@
 ---
-id: "1"
+id: "2"
 slug: "Intellectual Obesity"
 title: "Intellectual Obesity: Why you can't change (“Code” fixes it)."
 excerpt: "Your input is world-class, but your output is factory settings. Cure “Intellectual Obesity” not by willpower, but by installing the ”If-Then“ Code."
@@ -8,6 +8,12 @@ author: "Larry Li"
 category: "Achieve"
 coverImage: "./imgs/Intellectual Obesity.png"
 ---
+
+> "I used to suffer from severe 'intellectual obesity': consuming content on self-mastery by day, yet trapped in an inescapable loop of algorithmic feeds by night. It hit me then: I wasn't 'learning'; I was just installing bloatware into my cognitive system. The truth is, in the face of eons of biological evolution, willpower is as flimsy as paper."
+
+> 我曾经深陷这种“知识肥胖症”：白天在播客里听着自律与专注，深夜却在算法推荐的短视频里无法自拔。
+> 那一刻我意识到，我并不是在“学习”，而是在给日益臃肿的认知系统增加负担。
+> 所谓的意志力，在几十万年的生物进化本能面前，脆弱得就像一张纸。
 
 # Part 1: The Fault
 第一部分：故障

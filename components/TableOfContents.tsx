@@ -11,11 +11,22 @@ interface TableOfContentsProps {
   content: string;
 }
 
-// 添加全局样式以隐藏滚动条
+// 添加自定义滚动条样式
 const styleSheet = document.createElement('style');
 styleSheet.textContent = `
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #262626;
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #525252;
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #737373;
   }
 `;
 document.head.appendChild(styleSheet);
@@ -129,13 +140,12 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
 
       {/* 目录导航 */}
       <div className={`
-        hidden lg:block fixed top-32 z-40 bg-neutral-900/95 backdrop-blur-md 
+        hidden lg:block fixed z-40 bg-neutral-900/95 backdrop-blur-md 
         border border-neutral-700 rounded-xl shadow-xl
         transition-all duration-300 ease-in-out
-        min-w-[12rem] max-w-[28rem]
-        lg:min-w-[12rem] lg:max-w-[28rem] lg:h-auto
+        min-w-[12rem]
       `}
-      style={{right: `20px`}}
+      style={{right: `20px`, top: `5.5rem`, maxHeight: `calc(100vh - 6rem)`, width: `min(70vh, 100%)`, maxWidth: `70vh`}}
       >
         {/* 标题栏 */}
         <div className="flex items-center p-4 border-b border-neutral-700">
@@ -145,7 +155,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
         </div>
 
         {/* 目录列表 */}
-        <div className="overflow-y-auto hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="overflow-y-auto custom-scrollbar" style={{ maxHeight: `calc(100vh - 8rem)` }}>
           <nav className="p-2">
             <ul className="space-y-1">
               {tocItems.map((item) => (
@@ -163,7 +173,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ content }) => 
                       ${item.level === 2 ? 'ml-4' : ''}
                     `}
                   >
-                    <span>{item.text}</span>
+                    <span className="whitespace-normal break-words">{item.text}</span>
                   </button>
                 </li>
               ))}

@@ -50,7 +50,11 @@ const loadArticlesFromMarkdown = (): Article[] => {
 
 export const getArticles = async (): Promise<Article[]> => {
   const articles = loadArticlesFromMarkdown();
-  return articles;
+  return articles.sort((a, b) => {
+    const idA = parseInt(a.id, 10);
+    const idB = parseInt(b.id, 10);
+    return idB - idA;
+  });
 };
 
 export const getArticleBySlug = async (slug: string): Promise<Article | undefined> => {

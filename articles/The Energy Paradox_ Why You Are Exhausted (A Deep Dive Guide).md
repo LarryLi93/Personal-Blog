@@ -1,5 +1,5 @@
 ---
-id: "2"
+id: "3"
 slug: "Energetic Erosion"
 title: "Energetic Erosion: Why scrolling is the most expensive thing you do"
 excerpt: "Modern Rest is a collective hallucination. Most  “Relaxing” incinerates your energy. Tired while after idle? You’re overheating.
@@ -10,6 +10,11 @@ category: "Achieve"
 coverImage: "./imgs/Energetic Erosion2.png"
 ---
 
+> "Have you ever experienced this: sinking into the couch for an entire weekend, scrolling through dozens of short videos, and binge-watching a whole season of a show? Yet, when Monday morning arrives, that bone-deep exhaustion feels even heavier than before. I’ve come to realize that within the Matrix of the modern attention economy, what we call 'relaxation' is actually a high-frequency energy heist."
+
+> 你是否也有过这样的经历：在沙发上瘫了一个周末，刷完了几十条短视频，看完了整季的剧集。
+> 可周一醒来时，那种深入骨髓的疲惫感反而更重了？
+> 我意识到在现代注意力经济的矩阵里，所谓的“放松”其实是一场高频的能量抢劫。
 
 # **Part 1: The Collective Hallucination —— Unveiling the Prison of Modern Rest**
 

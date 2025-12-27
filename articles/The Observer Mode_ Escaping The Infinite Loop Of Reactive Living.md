@@ -11,6 +11,12 @@ coverImage: "./imgs/The Observer Mode.jpeg"
 
 # The Observer Mode: Escaping The Infinite Loop Of Reactive Living
 
+> "There was a time when I, too, was frequently lost in this 'first-person fog': feeling 'compressed' by the opinions of others and spiraling into anxiety as deadlines loomed. It wasn't until I began running an independent 'observer protocol' in the background of my mind that things changed. I discovered that those overwhelming emotions—once like crashing waves—instantly 'downgraded' into a series of analyzable data points."
+
+> 曾几何时，我也常陷入这种“第一人称的迷雾”：因为别人的评论而感到被“压缩”，因为截止日期的临近而陷入焦虑。
+> 直到我开始尝试在大脑的后台，运行一个独立的“观察程序”。
+> 我发现，那些原本排山倒海的情绪竟然会瞬间“降级”为一串可分析的数据。
+
 Imagine you are sitting in a **'dark, silent movie theater.'**
 
 想象一下，你正坐在一间 **“漆黑、静谧的放映厅”** 里。

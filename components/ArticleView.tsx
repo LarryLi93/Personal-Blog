@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { Article } from '../types';
 import { ArrowLeft, ArrowUp } from 'lucide-react';
 import { TableOfContents } from './TableOfContents';
-import remarkBreaks from 'remark-breaks'; // 引入插件
+import remarkBreaks from 'remark-breaks';
 
 interface ArticleViewProps {
   article: Article;
@@ -218,6 +218,16 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article, onBack }) => 
                 return <h6 {...props} className="!text-base !font-bold !text-white !mt-4 !mb-2 !leading-tight !tracking-tight">{children}</h6>;
               },
               p: ({node, children, ...props}) => <p className="!mb-6 !leading-relaxed text-neutral-300" {...props}>{children}</p>,
+              blockquote: ({node, children, ...props}) => {
+                return (
+                  <blockquote 
+                    {...props} 
+                    className="!border-l-4 !border-white !pl-6 !my-6 !bg-[rgb(255,255,255,0.2)] !py-3 !leading-relaxed !text-neutral-300 !font-serif !italic [&>p]:!mb-0"
+                  >
+                    {children}
+                  </blockquote>
+                );
+              },
               hr: ({node, ...props}) => <hr className="!my-12 !border-neutral-700" {...props} />,
             }}
           >

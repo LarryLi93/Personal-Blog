@@ -1,5 +1,5 @@
 ---
-id: "6"
+id: "1"
 slug: "Dive Into LangGraph Plus"
 title: "Dive Into LangGraph Plus"
 excerpt: "LangGraph 1.0 tutorial, including introductory, advanced two parts"
