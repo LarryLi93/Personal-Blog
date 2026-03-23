@@ -2,16 +2,18 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, FileText } from 'lucide-react';
 
 interface HeaderProps {
   showBackButton?: boolean;
   backHref?: string;
+  wordCount?: number;
 }
 
 export const Header: React.FC<HeaderProps> = ({ 
   showBackButton = false,
   backHref = "/",
+  wordCount,
 }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-black/80 backdrop-blur-md border-b border-white/10">
@@ -42,8 +44,15 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
         
-        {/* Right spacer */}
-        <div className="w-10"></div>
+        {/* Right - Word Count */}
+        <div className="flex items-center">
+          {wordCount !== undefined && wordCount > 0 && (
+            <div className="flex items-center text-neutral-400 text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg bg-neutral-900/50">
+              <FileText className="w-4 h-4 mr-2" />
+              <span>{wordCount.toLocaleString()} 字</span>
+            </div>
+          )}
+        </div>
       </div>
     </header>
   );
