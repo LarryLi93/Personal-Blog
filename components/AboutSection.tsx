@@ -18,7 +18,7 @@ export const AboutSection: React.FC = () => {
           <a href="#" className="text-neutral-500 hover:text-white transition-colors">
             GitHub
           </a>
-          <a href="#" className="text-neutral-500 hover:text-white transition-colors">
+          <a href="mailto:qwe592646355@gmail.com" className="text-neutral-500 hover:text-white transition-colors">
             Email
           </a>
         </div>
