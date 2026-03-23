@@ -29,8 +29,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 数据库文件路径
-DB_PATH = os.path.join(os.path.dirname(__file__), "visit_counter.db")
+# 数据库文件路径（使用 /data 目录以便持久化）
+DB_PATH = "/data/visit_counter.db"
+
+# 确保数据目录存在
+os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 
 @contextmanager
