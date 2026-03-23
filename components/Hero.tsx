@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="pt-24 pb-16 px-6 text-center">
+    <section className="pt-10 pb-16 px-6 text-center">
       <div className="max-w-4xl mx-auto space-y-4">
         <h2 className="text-xs tracking-[0.2em] uppercase">
           Larry Li
