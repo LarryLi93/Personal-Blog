@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # 前端服务 (Next.js + Nginx)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - blog-network
+
+  # 后端服务 (Python FastAPI)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    networks:
+      - blog-network
+
+networks:
+  blog-network:
+    driver: bridge

@@ -1,10 +1,10 @@
-# Curiosity Blog
+# LarryLi Blog
 
 基于 Next.js 14 + React + TypeScript + Tailwind CSS 构建的个人博客，支持 SSG 静态生成，SEO 友好。
 
 ## 架构
 
-- **前端**：Next.js 14 (SSG 静态导出)
+- **前端**：Next.js 14 (SSG 静态导出) + Nginx
 - **后端**：Python FastAPI + SQLite (浏览人数统计)
 
 ## 特性
@@ -16,8 +16,47 @@
 - ✅ **目录导航** - 文章右侧自动生成目录导航
 - ✅ **分类筛选** - 首页支持按分类筛选文章
 - ✅ **响应式设计** - 完美适配桌面和移动端
+- ✅ **Docker 一键部署** - 使用 Docker Compose 快速部署
 
-## 开发
+## 快速开始（Docker 一键部署）
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/LarryLi93/Personal-Blog.git
+cd Personal-Blog
+```
+
+### 2. 使用 Docker Compose 启动
+
+```bash
+docker-compose up -d
+```
+
+等待构建完成后，访问 <http://localhost>
+
+### 3. 停止服务
+
+```bash
+docker-compose down
+```
+
+### 4. 查看日志
+
+```bash
+# 所有服务日志
+docker-compose logs -f
+
+# 仅前端日志
+docker-compose logs -f frontend
+
+# 仅后端日志
+docker-compose logs -f backend
+```
+
+***
+
+## 开发模式
 
 ### 1. 安装前端依赖
 
@@ -35,7 +74,7 @@ start.bat
 ./start.sh
 ```
 
-后端运行在 http://localhost:8000
+后端运行在 <http://localhost:8000>
 
 ### 3. 启动前端开发服务器
 
@@ -43,82 +82,43 @@ start.bat
 npm run dev
 ```
 
-前端运行在 http://localhost:3000
+前端运行在 <http://localhost:3000>
 
-## 部署
+***
 
-### 方案 1：同一服务器（推荐）
+## 生产部署
 
-前后端部署在同一台服务器上：
+### 方案 1：Docker Compose（推荐）
 
-```
-服务器
-├── Nginx (80/443端口)
-│   ├── /         → 前端静态文件 (dist/)
-│   └── /api/     → 后端服务 (127.0.0.1:8000)
-├── 前端 (Next.js 构建输出)
-└── 后端 (Python FastAPI)
-```
+```bash
+# 1. 克隆项目
+git clone https://github.com/LarryLi93/Personal-Blog.git
+cd Personal-Blog
 
-**Nginx 配置：**
+# 2. 启动服务
+docker-compose up -d
 
-```nginx
-server {
-    listen 80;
-    server_name your-domain.com;
-    
-    # 前端静态文件
-    location / {
-        root /var/www/blog/dist;
-        try_files $uri $uri/ /index.html;
-    }
-    
-    # 后端 API 代理
-    location /api/ {
-        proxy_pass http://127.0.0.1:8000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
+# 3. 服务将运行在 80 端口
 ```
 
-**部署步骤：**
+### 方案 2：手动部署
 
 ```bash
 # 1. 构建前端
 npm run build
 
-# 2. 复制前端到服务器
-scp -r dist/* user@server:/var/www/blog/
+# 2. 配置 Nginx（参考 nginx.conf）
 
-# 3. 复制后端到服务器
-scp -r backend user@server:/var/www/blog/
-
-# 4. 服务器上启动后端（使用 PM2 管理）
-pm2 start "cd /var/www/blog/backend && python main.py" --name blog-backend
+# 3. 启动后端
+cd backend
+python main.py
 ```
 
-### 方案 2：分离部署
+***
 
-- **前端**：Vercel / Netlify / Cloudflare Pages
-- **后端**：自己的服务器 / Railway / Render
+## 配置说明
 
-**需要修改 `.env.local`：**
-
-```bash
-NEXT_PUBLIC_API_URL=https://your-api-domain.com
-```
-
-### 方案 3：纯静态（去掉浏览人数）
-
-如果不需要浏览人数功能，可以：
-
-1. 删除 `backend/` 目录
-2. 简化 `Hero.tsx` 去掉人数显示
-3. 纯静态部署到任何 CDN
-
-## 配置环境变量
+### 环境变量
 
 创建 `.env.local`：
 
@@ -129,6 +129,20 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 # 生产环境
 # NEXT_PUBLIC_API_URL=https://api.your-domain.com
 ```
+
+### 自定义域名
+
+修改 `lib/config.ts`：
+
+```typescript
+export const siteConfig = {
+  url: 'https://your-domain.com',
+  name: 'LarryLi Blog',
+  // ...
+};
+```
+
+***
 
 ## 添加新文章
 
@@ -151,13 +165,43 @@ tags: "tag1, tag2, tag3"
 文章内容...
 ```
 
+***
+
+## 目录结构
+
+```
+Personal-Blog/
+├── app/                    # Next.js 应用目录
+│   ├── blog/[slug]/        # 文章详情页
+│   ├── layout.tsx          # 根布局
+│   ├── page.tsx            # 首页
+│   ├── sitemap.ts          # 站点地图
+│   └── robots.ts           # 搜索引擎爬虫配置
+├── backend/                # Python FastAPI 后端
+│   ├── Dockerfile          # 后端 Docker 配置
+│   ├── main.py             # 后端入口
+│   └── requirements.txt    # Python 依赖
+├── components/             # React 组件
+├── content/articles/       # Markdown 文章
+├── lib/                    # 工具函数和配置
+├── public/                 # 静态资源
+├── Dockerfile              # 前端 Docker 配置
+├── docker-compose.yml      # Docker Compose 配置
+├── nginx.conf              # Nginx 配置
+└── README.md
+```
+
+***
+
 ## SEO 优化建议
 
-1. **修改域名**：更新 `app/sitemap.ts` 和 `app/robots.ts` 中的域名
+1. **修改域名**：更新 `lib/config.ts` 中的 `siteConfig.url`
 2. **添加 Google Analytics**：在 `app/layout.tsx` 中添加 GA 代码
 3. **提交到搜索引擎**：
    - [Google Search Console](https://search.google.com/search-console)
    - [Bing Webmaster Tools](https://www.bing.com/webmasters)
+
+***
 
 ## License
 

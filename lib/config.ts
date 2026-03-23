@@ -5,7 +5,7 @@
 
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://your-domain.com',
-  name: process.env.NEXT_PUBLIC_SITE_NAME || 'Curiosity Blog',
+  name: process.env.NEXT_PUBLIC_SITE_NAME || 'LarryLi Blog',
   description: 'Exploring ideas on learning, achievement, spirituality, and AI solutions.',
   author: 'Larry Li',
   twitter: '@larryli', // Update with actual handle
