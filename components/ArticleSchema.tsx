@@ -25,7 +25,7 @@ export function ArticleSchema({ article, url }: ArticleSchemaProps) {
       name: "Curiosity Blog",
       logo: {
         "@type": "ImageObject",
-        url: "https://yourdomain.com/logo.png",
+        url: "https://www.islarryli.com/imgs/author.png",
       },
     },
     mainEntityOfPage: {

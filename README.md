@@ -127,7 +127,7 @@ python main.py
 NEXT_PUBLIC_API_URL=http://localhost:8000
 
 # 生产环境
-# NEXT_PUBLIC_API_URL=https://api.your-domain.com
+# NEXT_PUBLIC_API_URL=https://api.islarryli.com
 ```
 
 ### 自定义域名
@@ -136,7 +136,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 ```typescript
 export const siteConfig = {
-  url: 'https://your-domain.com',
+  url: 'https://www.islarryli.com',
   name: 'LarryLi Blog',
   // ...
 };

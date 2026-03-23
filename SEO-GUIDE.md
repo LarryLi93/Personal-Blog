@@ -40,7 +40,7 @@
 ### 1. 更新域名
 编辑 `.env` 文件：
 ```env
-NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+NEXT_PUBLIC_SITE_URL=https://www.islarryli.com
 NEXT_PUBLIC_SITE_NAME="Your Blog Name"
 ```
 
