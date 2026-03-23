@@ -31,21 +31,20 @@ export const Header: React.FC<HeaderProps> = ({
           />
         </Link>
         
-        {/* Center - Back Button (only in article view) */}
-        <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-3xl flex justify-start px-6">
-          {showBackButton && (
-            <Link 
-              href={backHref}
-              className="group flex items-center text-neutral-400 hover:text-white transition-colors text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg hover:border-white/30 hover:bg-neutral-800/50"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Back
-            </Link>
-          )}
-        </div>
-        
-        {/* Right - Word Count */}
-        <div className="flex items-center">
+        {/* Center - Back Button & Word Count (only in article view) */}
+        <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-3xl flex justify-between items-center px-6">
+          <div>
+            {showBackButton && (
+              <Link 
+                href={backHref}
+                className="group flex items-center text-neutral-400 hover:text-white transition-colors text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg hover:border-white/30 hover:bg-neutral-800/50"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+                Back
+              </Link>
+            )}
+          </div>
+
           {wordCount !== undefined && wordCount > 0 && (
             <div className="flex items-center text-neutral-400 text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg bg-neutral-900/50">
               <FileText className="w-4 h-4 mr-2" />
@@ -53,6 +52,9 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
           )}
         </div>
+        
+        {/* Right - Spacer to maintain layout balance */}
+        <div className="w-10" />
       </div>
     </header>
   );
