@@ -36,4 +36,4 @@ docker-compose ps
 echo ""
 echo "=== 更新完成 ==="
 echo "前端访问: http://你的IP:81"
-echo "后端访问: http://你的IP:8000"
+echo "后端访问: http://你的IP:8010"
