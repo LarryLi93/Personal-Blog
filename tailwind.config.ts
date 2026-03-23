@@ -8,8 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Noto Serif SC', 'Lora', 'Georgia', 'serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
       },
       colors: {
         neutral: {
