@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
           © {currentYear} Larry Li. All rights reserved.
         </p>
         <p className="text-sm text-neutral-600">
-          Built with curiosity and caffeine.
+          Built with LarryLi and caffeine.
         </p>
       </div>
     </footer>

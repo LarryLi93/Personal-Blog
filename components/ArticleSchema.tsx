@@ -1,6 +1,7 @@
 "use client";
 
 import { Article } from '@/types';
+import { siteConfig } from '@/lib/config';
 
 interface ArticleSchemaProps {
   article: Article;
@@ -13,7 +14,7 @@ export function ArticleSchema({ article, url }: ArticleSchemaProps) {
     "@type": "BlogPosting",
     headline: article.title,
     description: article.excerpt,
-    image: article.coverImage,
+    image: article.coverImage ? `${siteConfig.url}${article.coverImage}` : undefined,
     datePublished: article.date,
     dateModified: article.date,
     author: {
@@ -22,10 +23,13 @@ export function ArticleSchema({ article, url }: ArticleSchemaProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Curiosity Blog",
+      name: siteConfig.name,
+      url: siteConfig.url,
       logo: {
         "@type": "ImageObject",
-        url: "https://www.islarryli.com/imgs/author.png",
+        url: `${siteConfig.url}/imgs/author.png`,
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {
@@ -33,6 +37,7 @@ export function ArticleSchema({ article, url }: ArticleSchemaProps) {
       "@id": url,
     },
     keywords: article.tags?.join(", ") || article.category,
+    articleSection: article.category,
   };
 
   return (

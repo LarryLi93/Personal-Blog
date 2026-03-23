@@ -5,7 +5,7 @@
 
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.islarryli.com',
-  name: process.env.NEXT_PUBLIC_SITE_NAME || 'LarryLi Blog',
+  name: process.env.NEXT_PUBLIC_SITE_NAME || 'LarryLilog',
   description: 'Exploring ideas on learning, achievement, spirituality, and AI solutions.',
   author: 'Larry Li',
   twitter: '@larryli', // Update with actual handle

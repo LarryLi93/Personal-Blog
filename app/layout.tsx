@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LarryLi Blog | Beyond The Walls. Into The Wildness.",
+  title: "LarryLilog | Beyond The Walls. Into The Wildness.",
   description: "Deep dives on Human Growth. Spiritual Insight. Rational Wisdom & Independent Income.",
   keywords: ["blog", "personal growth", "spirituality", "rational wisdom", "independent income"],
   authors: [{ name: "Larry Li" }],
   openGraph: {
-    title: "LarryLi Blog",
+    title: "LarryLilog",
     description: "Beyond The Walls. Into The Wildness.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LarryLi Blog",
+    title: "LarryLilog",
     description: "Beyond The Walls. Into The Wildness.",
   },
   robots: {

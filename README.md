@@ -1,4 +1,4 @@
-# LarryLi Blog
+# LarryLilog
 
 基于 Next.js 14 + React + TypeScript + Tailwind CSS 构建的个人博客，支持 SSG 静态生成，SEO 友好。
 

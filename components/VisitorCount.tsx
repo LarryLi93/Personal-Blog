@@ -7,7 +7,7 @@ export const VisitorCount: React.FC = () => {
   const [isNewVisitor, setIsNewVisitor] = useState(false);
 
   useEffect(() => {
-    const NAMESPACE = 'curiosity-blog';
+    const NAMESPACE = 'LarryLi-blog';
     const KEY = 'visits';
     const STORAGE_KEY = 'has_visited_blog';
 

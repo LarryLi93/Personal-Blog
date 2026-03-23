@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { ArticleView } from '@/components/ArticleView';
 import { Footer } from '@/components/Footer';
 import { ArticleSchema } from '@/components/ArticleSchema';
+import { BreadcrumbSchema } from '@/components/BreadcrumbSchema';
 import { getAllArticles, getArticleBySlug } from '@/lib/articles';
 import { siteConfig, getCanonicalUrl } from '@/lib/config';
 
@@ -108,6 +109,7 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <>
       <ArticleSchema article={article} url={canonicalUrl} />
+      <BreadcrumbSchema article={article} />
       <div className="min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black">
         <Header showBackButton={true} backHref="/" wordCount={wordCount} />
 
