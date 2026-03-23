@@ -98,7 +98,7 @@ This means you have finally gained the **'architectural authority'** to modify t
 ***
 
 # Part 1: The Prisoner of First-Person Entropy
-# 第一部分：第一人称熵增的囚徒
+第一部分：第一人称熵增的囚徒
 
 Why do we desperately need this mode? Because the **'default human perspective'** is a systematic disaster for long-term growth.
 我们为什么迫切需要这种模式？因为人类 **"默认的视角”** 对于长期成长来说是一场系统性的灾难。
@@ -197,7 +197,7 @@ What you lack is not effort or speed, but the **'altitude required'** to see the
 
 # Part 2: The Advantage of Psychological Displacement
 
-# 第二部分：心理位移的优势
+第二部分：心理位移的优势
 
 When we activate the Observer Mode, we are performing what scientists call a **'dimensional leap'** in consciousness.
 当我们开启观察者模式，我们实际上是在意识中进行一场科学家所说的 **"维度跃迁”**。
@@ -296,7 +296,7 @@ By observing the system, you gain the power to **'steer the system'** toward int
 
 # Part 3: The Gamified Protocol of the Meta-Lab
 
-# 第三部分：元实验室的游戏化协议
+第三部分：元实验室的游戏化协议
 
 To prevent this profound shift from remaining a mere concept, we must turn it into a **'rigorous, gamified protocol.'**
 为了防止这种深刻的转变仅停留在概念层面，我们必须将其变成一套 **"严谨的游戏化协议”**。

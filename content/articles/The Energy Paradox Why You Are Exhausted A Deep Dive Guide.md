@@ -18,7 +18,7 @@ coverImage: "/imgs/Energetic Erosion2.png"
 ---
 
 # Part 1: The Collective Hallucination —— Unveiling the Prison of Modern Rest
-# 第一部分：集体幻觉 —— 揭开现代休息的牢笼
+第一部分：集体幻觉 —— 揭开现代休息的牢笼
 
 *If you walk down the street right now and ask a random person: "What do you do when you feel truly exhausted?"*
 如果你现在走上街头，随便抓一个人问："当你感到真正的精疲力竭时，你会做什么？"
@@ -86,7 +86,7 @@ coverImage: "/imgs/Energetic Erosion2.png"
 ---
 
 # Part 2: Perspective —— The Anatomy of Your Energy Leaks
-# 第二部分：视角 —— 能量泄漏的解剖学
+第二部分：视角 —— 能量泄漏的解剖学
 
 *To understand why your energy is constantly at zero, we must examine your hardware.*
 要理解为什么你的能量总是在零点，我们必须检查你的硬件。
@@ -208,7 +208,7 @@ coverImage: "/imgs/Energetic Erosion2.png"
 ---
 
 # Part 3: Advantage —— Focus as the Ultimate Currency
-# 第三部分：优势 —— 专注作为终极货币
+第三部分：优势 —— 专注作为终极货币
 
 *Now, you might ask: "Why does this matter? Can't I just be a happy, distracted consumer?"*
 现在，你可能会问："这有什么关系？我就不能做一个快乐、分心的消费者吗？"
@@ -264,7 +264,7 @@ coverImage: "/imgs/Energetic Erosion2.png"
 ---
 
 # Part 4: Gamify —— The Energy Reboot Protocol
-# 第四部分：行动 —— 能量重启协议
+第四部分：行动 —— 能量重启协议
 
 *We have shifted your Perspective. Now, let’s transform that into **Action**.*
 我们已经转变了你的视角。现在，让我们把它转化为**行动**。

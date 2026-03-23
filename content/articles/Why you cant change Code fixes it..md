@@ -22,7 +22,7 @@ coverImage: "./imgs/Intellectual Obesity.png"
 
 
 # Part 1: The Fault
-# 第一部分：故障
+第一部分：故障
 
 *Deep breath*
 深吸一口气
@@ -105,7 +105,7 @@ Matrix（矩阵）给我们植入了一个最大的误区：**它让你误以为
 ---
 
 # Part 2: The Source Code
-# 第二部分：源代码逻辑
+第二部分：源代码逻辑
 
 *If we view the human body as a sophisticated biological computer, then most people are running a set of **Legacy Code** full of bugs.*
 如果我们把人体看作一台精密的生物计算机，那么大部分人都在运行一套充满 Bug 的**旧脚本 (Legacy Code)**。
@@ -198,7 +198,7 @@ Matrix（矩阵）给我们植入了一个最大的误区：**它让你误以为
 ---
 
 # Part 3: Writing The Script (The Three Rules)
-# 第三部分：编写脚本的三个法则
+第三部分：编写脚本的三个法则
 
 *Okay, now let’s get practical.*
 好，现在我们进入实操。
@@ -301,7 +301,7 @@ Matrix（矩阵）给我们植入了一个最大的误区：**它让你误以为
 ---
 
 # Part 4: The Algorithm of Focus
-# 第四部分：聚焦算法——场景模拟
+第四部分：聚焦算法——场景模拟
 
 *Let’s apply this system to the three scenarios you want to solve the most.*
 让我们把这套系统应用到你最想解决的三个场景里。
@@ -357,7 +357,7 @@ Matrix（矩阵）给我们植入了一个最大的误区：**它让你误以为
 ---
 
 # Part 5: Escape The Matrix
-# 第五部分：逃离矩阵
+第五部分：逃离矩阵
 
 *Finally, let’s talk about why we are doing this.*
 最后，我们来聊聊为什么要这么做。

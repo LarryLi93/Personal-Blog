@@ -16,7 +16,7 @@ coverImage: "/imgs/Future Spoilers.png"
 ---
 
 # Part 1: The Curse of Certainty 
-# 第一部分：确定性的诅咒 
+第一部分：确定性的诅咒 
 
 Imagine you're sitting in a movie theater.
 想象一下，你现在正坐在一家电影院里。
@@ -110,7 +110,7 @@ Today, we're going to talk about: why "spoiling" your own life is the first step
 
 
 # Part 2: Entropy, Biological Homeostasis, and the Algorithmic Cage 
-# 第二部分：熵增、生物稳态与算法囚笼 
+第二部分：熵增、生物稳态与算法囚笼 
 
 Why do we get trapped in a known script?
 为什么我们会被困在已知的剧本里？
@@ -123,7 +123,6 @@ This isn't just a matter of "willpower." It's the result of three underlying for
 
 
 ## Physical Layer: The Law of Entropy 
-
 物理层：熵增定律 
 
 The second law of thermodynamics tells us: in a closed system, without external intervention, everything tends toward chaos and disorder.
@@ -236,7 +235,7 @@ If you don't actively observe that ending, you will be like a car in self-drivin
 
 
 # Part 3: The Silent Cost of Buried Potential 
-# 第三部分：潜力被埋葬的寂静代价 
+第三部分：潜力被埋葬的寂静代价 
 
 Many people would argue with me: "Dan, what's wrong with being steady? I'm just an ordinary person."
 很多人会反驳我：“Dan，平稳一点有什么不好吗？我只是个普通人。”
@@ -346,7 +345,7 @@ A consciousness without sovereignty, a soul desiccated by algorithms, a life wal
 
 
 # Part 4: Become the Architect of Your Life's System 
-# 第四部分：成为你人生的系统架构师 
+第四部分：成为你人生的系统架构师 
 
 How do we tear up this script?
 我们要如何撕掉这个剧本？
@@ -500,7 +499,7 @@ To break free from the preset track, you must introduce components of "uncertain
 
 
 # Part 5: Reclaim Your Sovereignty 
-# 第五部分：拿回你的主权 
+第五部分：拿回你的主权 
 
 Our life, in essence, is a war over **"attention."**
 我们这一生，本质上是在进行一场关&#x4E8E;**“注意力”**&#x7684;战争。

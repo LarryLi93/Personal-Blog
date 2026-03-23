@@ -37,7 +37,7 @@ Please find a quiet place; this will require about 30 minutes of deep reading.
 
 
 # Part 1: Attention
-# 第一部分：注意力
+第一部分：注意力
 
 **— We do not die from laziness; we die from ambiguity.**
 **—— 我们并不是死于懒惰，而是死于模糊。**
@@ -152,7 +152,7 @@ The first thing we need to understand is: **it is not your will that is broken, 
 
 
 # Part 2: Perspective
-# 第二部分：视角
+第二部分：视角
 
 **— Cognitive Offloading and the Brain's Bandwidth Crisis**
 **—— 认知卸载与大脑的“带宽危机”**
@@ -267,7 +267,7 @@ We do not need to seek stimulation in work (that is the source of fear); we need
 
 
 # Part 3: Advantage
-# 第三部分：优势
+第三部分：优势
 
 **— Why “Disassembly” Is the Highest Level Cognitive Strategy**
 **—— 为什么“拆解”是最高级的认知策略**
@@ -399,7 +399,7 @@ A list turns your boring work into a game where you can constantly score points.
 
 
 # Part 4: Gamify
-# 第四部分：游戏化
+第四部分：游戏化
 
 **— How to Build Your “Absolute Action System”**
 **—— 如何构建你的“绝对行动系统”**
