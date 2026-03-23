@@ -49,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({
           {wordCount !== undefined && wordCount > 0 && (
             <div className="flex items-center text-neutral-400 text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg bg-neutral-900/50">
               <FileText className="w-4 h-4 mr-2" />
-              <span>{wordCount.toLocaleString()} 字</span>
+              <span>{wordCount.toLocaleString()} Words</span>
             </div>
           )}
         </div>
