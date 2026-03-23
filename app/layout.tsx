@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LarryLilog | Beyond The Walls. Into The Wildness.",
+  title: "LarryLi Blog | Beyond The Walls. Into The Wildness.",
   description: "Deep dives on Human Growth. Spiritual Insight. Rational Wisdom & Independent Income.",
   keywords: ["blog", "personal growth", "spirituality", "rational wisdom", "independent income"],
   authors: [{ name: "Larry Li" }],
@@ -24,6 +24,12 @@ export const metadata: Metadata = {
   icons: {
     icon: "/imgs/author.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

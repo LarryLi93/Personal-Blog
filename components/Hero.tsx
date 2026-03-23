@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
         <h2 className="text-xs tracking-[0.2em] uppercase">
           Larry Li
         </h2>
-        <h1 className="text-5xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1]" style={{ lineHeight: '1.2' }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.1]" style={{ lineHeight: '1.2' }}>
           Beyond The Walls. Into The Wildness.
         </h1>
         <p className="text-lg md:text-xl mt-6 max-w-2xl mx-auto font-light">

@@ -17,34 +17,37 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-50 w-full bg-black/80 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Logo - Left */}
-        <Link 
-          href="/"
-          className="block relative rounded-full overflow-hidden w-10 h-10 border border-neutral-700 hover:border-neutral-500 transition-colors"
-          aria-label="Home"
-        >
-          <img 
-            src="/imgs/author.png" 
-            alt="Larry Li" 
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
-          />
-        </Link>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+        {/* Left: Back Button + Logo */}
+        <div className="flex items-center gap-3">
+          {/* Back Button - inline */}
+          {showBackButton && (
+            <Link 
+              href={backHref}
+              className="group flex items-center text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm font-medium px-2 sm:px-3 py-2 border border-neutral-700 rounded-lg hover:border-white/30 hover:bg-neutral-800/50"
+              aria-label="Back"
+            >
+              <ArrowLeft className="w-4 h-4 sm:mr-2 group-hover:-translate-x-1 transition-transform" />
+              <span className="hidden sm:inline">Back</span>
+            </Link>
+          )}
+          
+          {/* Logo */}
+          <Link 
+            href="/"
+            className="block relative rounded-full overflow-hidden w-10 h-10 border border-neutral-700 hover:border-neutral-500 transition-colors flex-shrink-0"
+            aria-label="Home"
+          >
+            <img 
+              src="/imgs/author.png" 
+              alt="Larry Li" 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </Link>
+        </div>
         
-        {/* Center - Back Button & Word Count (only in article view) */}
-        <div className="absolute left-1/2 -translate-x-1/2 w-full max-w-3xl flex justify-between items-center px-6">
-          <div>
-            {showBackButton && (
-              <Link 
-                href={backHref}
-                className="group flex items-center text-neutral-400 hover:text-white transition-colors text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg hover:border-white/30 hover:bg-neutral-800/50"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                Back
-              </Link>
-            )}
-          </div>
-
+        {/* Center - Word Count (desktop only) */}
+        <div className="hidden md:flex items-center justify-center flex-1 px-8">
           {wordCount !== undefined && wordCount > 0 && (
             <div className="flex items-center text-neutral-400 text-sm font-medium px-4 py-2 border border-neutral-700 rounded-lg bg-neutral-900/50">
               <FileText className="w-4 h-4 mr-2" />
@@ -53,8 +56,8 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
         
-        {/* Right - Spacer to maintain layout balance */}
-        <div className="w-10" />
+        {/* Right - Spacer */}
+        <div className="w-10 hidden sm:block" />
       </div>
     </header>
   );

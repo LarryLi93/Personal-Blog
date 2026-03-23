@@ -11,7 +11,7 @@ coverImage: "/imgs/Future Spoilers.png"
 ---
 
 # The Tyranny of Ambiguity: You Are Not Lazy, You Are Facing an Infinite Monster
-# 模糊的暴政：你不是懒惰，你面对的是无限的怪物
+模糊的暴政：你不是懒惰，你面对的是无限的怪物
 
 > 我曾经以为我是被诅咒的拖延症患者。
 > 在研究了认知科学和尝试了无数方法后，我整理出了这套让我重建秩序的系统。

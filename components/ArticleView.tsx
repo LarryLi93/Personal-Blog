@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { Article } from '@/types';
 import { ArrowUp } from 'lucide-react';
 import { TableOfContents } from './TableOfContents';
+import { MobileTableOfContents } from './MobileTableOfContents';
 import remarkBreaks from 'remark-breaks';
 import remarkGfm from 'remark-gfm';
 
@@ -86,7 +87,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
             <span>{article.author}</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight break-words">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight break-words">
             {article.title}
           </h1>
           
@@ -181,15 +182,18 @@ export const ArticleView: React.FC<ArticleViewProps> = ({ article }) => {
         </div>
       </article>
       
-      {/* Table of Contents */}
+      {/* Table of Contents - Desktop */}
       <TableOfContents content={article.content} />
+      
+      {/* Table of Contents - Mobile */}
+      <MobileTableOfContents content={article.content} />
       
       {/* Back to Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
           className="fixed bottom-8 z-50 bg-white text-black p-3 rounded-full shadow-lg hover:bg-neutral-200 transition-all duration-300 animate-fade-in"
-          style={{right: '20px'}}
+          style={{right: 'max(16px, env(safe-area-inset-right))'}}
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />
