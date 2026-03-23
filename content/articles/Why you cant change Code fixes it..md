@@ -6,7 +6,7 @@ excerpt: "Your input is world-class, but your output is factory settings. Cure. 
 date: "December 14, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "./imgs/Intellectual Obesity.png"
+coverImage: "./imgs/Intellectual Obesity.webp"
 ---
 
 > "I once suffered from "intellectual obesity": devouring self-mastery

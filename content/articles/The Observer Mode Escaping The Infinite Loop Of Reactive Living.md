@@ -6,7 +6,7 @@ excerpt: "Without self-observation, you fall victim to life’s entropy. The obs
 date: "December 23, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "./imgs/The Observer Mode.jpeg"
+coverImage: "./imgs/The Observer Mode.webp"
 ---
 
 # The Observer Mode: Escaping The Infinite Loop Of Reactive Living

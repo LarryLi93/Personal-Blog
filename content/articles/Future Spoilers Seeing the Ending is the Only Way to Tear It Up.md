@@ -6,7 +6,7 @@ excerpt: "If you can see your life ten years from now and it feels dull, you are
 date: "	December 22, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "/imgs/Future Spoilers.png"
+coverImage: "/imgs/Future Spoilers.webp"
 ---
 
 > 曾经，我的人生是一场已经写好结局的电影，而屏幕上的那个我在十年后依然重复着今天的焦虑、挤着同样的地铁、处理着毫无意义的邮件……

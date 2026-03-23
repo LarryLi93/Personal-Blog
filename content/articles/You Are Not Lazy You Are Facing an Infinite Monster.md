@@ -6,7 +6,7 @@ excerpt: "We do not die from laziness; we die from ambiguity. Clarity is the onl
 date: "	December 26, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "/imgs/Future Spoilers.png"
+coverImage: "/imgs/Future Spoilers.webp"
 
 ---
 

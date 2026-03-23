@@ -6,7 +6,7 @@ excerpt: "Modern Rest is a collective hallucination. Most relaxing activities in
 date: "December 21, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "/imgs/Energetic Erosion2.png"
+coverImage: "/imgs/Energetic Erosion2.webp"
 ---
 
 > "Have you ever experienced this: sinking into the couch for an entire weekend, scrolling through dozens of short videos, and binge-watching a whole season of a show? Yet, when Monday morning arrives, that bone-deep exhaustion feels even heavier than before. I've come to realize that within the Matrix of the modern attention economy, what we call 'relaxation' is actually a high-frequency energy heist."
