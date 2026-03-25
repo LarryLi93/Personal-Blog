@@ -10,9 +10,7 @@ coverImage: "/imgs/Future Spoilers.webp"
 ---
 
 > Once, my life was a movie with a pre-written ending. The me on the screen would still be repeating today’s anxieties ten years later, squeezing onto the same subway, dealing with meaningless emails…
-
 > At that moment, I faced two choices: either storm out of the theater, or sit there waiting for it all to end.
-
 > What about you, now?
 
 > 曾经，我的人生是一场已经写好结局的电影，而屏幕上的那个我在十年后依然重复着今天的焦虑、挤着同样的地铁、处理着毫无意义的邮件……
