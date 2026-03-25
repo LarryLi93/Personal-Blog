@@ -6,12 +6,17 @@ excerpt: "We do not die from laziness; we die from ambiguity. Clarity is the onl
 date: "	December 26, 2025"
 author: "Larry Li"
 category: "Achieve"
-coverImage: "/imgs/Future Spoilers.webp"
+coverImage: "/imgs/tyranny.webp"
 
 ---
 
 # The Tyranny of Ambiguity: You Are Not Lazy, You Are Facing an Infinite Monster
 模糊的暴政：你不是懒惰，你面对的是无限的怪物
+
+> I once thought I was a cursed procrastinator.
+> After studying cognitive science and trying countless methods, I’ve put together this system that helped me rebuild order in my life.
+> This isn’t about productivity—it’s about redemption.
+
 
 > 我曾经以为我是被诅咒的拖延症患者。
 > 在研究了认知科学和尝试了无数方法后，我整理出了这套让我重建秩序的系统。
