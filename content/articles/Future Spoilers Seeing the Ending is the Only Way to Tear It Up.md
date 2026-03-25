@@ -154,8 +154,8 @@ If you don't actively observe that ending, you will be like a car in self-drivin
 # Part 3: The Silent Cost of Buried Potential 
 **第三部分：潜力被埋葬的寂静代价**
 
-Many people would argue with me: "Dan, what's wrong with being steady? I'm just an ordinary person."
-很多人会反驳我：“Dan，平稳一点有什么不好吗？我只是个普通人。”
+Many people would argue with me: "Li, what's wrong with being steady? I'm just an ordinary person."
+很多人会反驳我：“Li 平稳一点有什么不好吗？我只是个普通人。”
 
 Alright, let's **quantify the real cost** of this "steadiness."
 好，让我们来**量化一下**这种“平稳”的真实代价。
